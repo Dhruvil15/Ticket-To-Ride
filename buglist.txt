@@ -1,0 +1,82 @@
+Bug Report
+==========
+
+
+For each fixed bug , please provide the following information:
+  - Class name
+  - Method name
+  - Line number
+	- Cause of bug
+  - Bug fix (or reason bug is not easily fixed)
+
+
+BUGS FOUND AND FIXED BY UNIT TEST (should be 5-6):
+
+Bug 0:
+  Class: Link
+	Method: toString()
+	Line: 66
+	Cause: not printing length
+	Fix: print the length
+
+Bug 1:
+  Class: Link
+	Method: compareTo
+	Line: 77
+	Cause: compare city1's twice
+	Fix: change to compare city2 if city1's are equal
+
+Bug 2:
+  Class: City
+	Method: compareTo(City p)
+	Line: 56
+	Cause: compared p.name to p.name instead of this.name to p.name
+	Fix: change p.name to name
+
+Bug 3:
+  Class: City
+	Method: find(String nm)
+	Line: 39
+	Cause: returns null instead of the new City
+	Fix: return null -> return p
+
+Bug 4:
+  Class: City
+	Method: getLinksTo(City dest, Set<Link> routeLink)
+	Line: 82
+	Cause: does not return true when path is found
+	Fix: add return true
+
+Bug 5:
+  Class: CityComparator
+	Method: compare(City x, City y)
+	Line: 10
+	Cause: arguments in reverse order in call to x.compare.(y,x)
+	Fix: swap x and y
+
+
+BUGS FOUND AND FIXED USING EXPECTED INPUT (2-3):
+
+Bug 6:
+  Class: City
+	Method: makeTree
+	Line: 114
+	Cause: while loop checks if priority queue is empty
+	Fix: make loop check that priority queue is not empty
+
+Bug 7:
+  Class: City
+	Method: makeTree
+	Line: 128
+	Cause: priority queue distance is set to the edge length
+	Fix: set child.distance = city.distance + length
+
+Bug 8:
+  Class:
+	Method:
+	Line:
+	Cause:
+	Fix:
+
+
+

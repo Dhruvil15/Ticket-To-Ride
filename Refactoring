@@ -1,0 +1,34 @@
+Refactoring done:
+
+Refactor 1:
+  Class: City.java
+  	Method: makeTree()
+  	Fix: Move the makeTree() method to another class called Tree.java, cause the method does not have any
+  	     connection to City.java, and make City.java extend Tree.java, so that the HashSet and HashMap
+  	     can be used by makeTree(), also the makeTree() method violets the Single responsibility principle.
+  	Implementation: Implemented
+
+Refactor 2:
+  Class: City.java
+    Fix: Remove the Compare(City c1, City c2) method, cause the CityComparator implements the same method and
+         methodology. Just change the inner method methodology based on the compare method of City.java.
+    Implementation: Implemented
+
+Refactor 3:
+  Class: City.java, RouteCost.java
+    Fix: Remove the unused imported packages from the class, only add the needed ones.
+    Implementation: Implemented
+
+Refactor 4:
+  Class: City.java, Link.java
+  	Fix: Implement Encapsulation, encapsulate variables and provide getters and setters.
+  	Implementation: Not Implemented
+
+
+Extension provided:
+
+  Class: RouteCost.java
+  Extension Done: 1) Add color to the links(only "Red" and "Blue"), there can be now coloured and uncoloured links.
+                     Handle the invalid input cases, error checking cases.
+                  2) Input validation.
+

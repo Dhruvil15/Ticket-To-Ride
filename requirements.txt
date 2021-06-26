@@ -1,0 +1,36 @@
+1. Support two players
+    + red and blue links
+		+ red and blue routes
+
+2. Route changes
+    + red routes can use red and uncolored links
+		+ blue routes can use blue and uncolored links
+		+ uncolored routes can only use uncolored links
+
+3. Handle improper input
+    + output line with an error
+		+ too many tokens
+		+ too few tokens
+		+ player colors other than red or blue
+		+ invalid distance
+
+4. Add Unit tests for any new classes
+
+Bonus:  
+    Learn about Factory pattern
+    Implement factory pattern for links
+
+Add a factory
+    + Builds links given the input
+    + Allows easy addition of new links
+		+ Separate link and factory classes
+
+Extensions designed 10% (UML diagram)
+Extensions implemented 20%
+Extensions tested 20%
+Refactorings described (4) 10%
+Refactorings implemented (2) 10%
+Code Clarity 10%
+Document Clarity 10%
+Factory 10% Bonus
+
